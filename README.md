@@ -46,9 +46,9 @@ The project avoids external libraries or frameworks, highlighting pure C program
 ### Data Persistence
 All records are stored using plain C file functions (`fopen`, `fprintf`, `fread`, etc.).  
 Typical files include:
-- `users.txt`
-- `drivers.txt`
-- `trips.txt`
+- `customer.txt`
+- `driver.txt`
+- `customer_advanced.txt`
 
 ---
 
@@ -102,26 +102,15 @@ typedef struct {
 - Fare calculation algorithm (distance-based or zone-based)
 - Input validation and error-checking routines  
 
-## 4. How to Compile and Run
-
-### Compilation
-```bash
-gcc main.c users.c drivers.c booking.c utils.c -o cab_app
-```
 
 ### Repository Structure
 
 ```
 / (root)
-├── main.c
-├── users.c
-├── drivers.c
-├── booking.c
-├── utils.c
-├── include/          # header files
-├── data/
-│   ├── users.txt
-│   ├── drivers.txt
-│   └── trips.txt
+├── cproject.c
+├── customer.txt
+├── customer_advanced.txt
+├── driver.txt
 └── README.md
 ```
+
