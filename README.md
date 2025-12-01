@@ -109,16 +109,19 @@ typedef struct {
 gcc main.c users.c drivers.c booking.c utils.c -o cab_app
 ```
 
-### Repository strcuture
+### Repository Structure
+
+```
 / (root)
-├─ main.c
-├─ users.c
-├─ drivers.c
-├─ booking.c
-├─ utils.c
-├─ include/        (header files)
-├─ data/
-│   ├─ users.txt
-│   ├─ drivers.txt
-│   └─ trips.txt
-└─ README.md
+├── main.c
+├── users.c
+├── drivers.c
+├── booking.c
+├── utils.c
+├── include/          # header files
+├── data/
+│   ├── users.txt
+│   ├── drivers.txt
+│   └── trips.txt
+└── README.md
+```
